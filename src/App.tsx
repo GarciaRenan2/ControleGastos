@@ -1,16 +1,12 @@
-import './App.css';
-import Header from "./components/Header"
-import TransactionList from "./components/TransactionList"
+import Home from "./components/Home"
+import GlobalStyle from "./styles/global"
 
 function App() {
   return (
-    <div className="App">
-      <Header title='Titlo'>
-        <a href="/">Listagem</a>
-        <a href="/create">Cadastro</a>
-      </Header>
-      <TransactionList />
-    </div>
+    <>
+      <GlobalStyle />
+      <Home />
+    </>
   );
 }
 

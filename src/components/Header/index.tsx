@@ -1,5 +1,5 @@
 import { ReactNode } from "react"
-import "./styles.css"
+import { HeaderStyle } from "./styles";
 
 type HeaderProps = {
     title: string
@@ -8,8 +8,8 @@ type HeaderProps = {
 
 function Header({ title = 'Go Finances', children }: HeaderProps) {
     return (
-        <div>
-            <header id="header">
+        <HeaderStyle>
+            <header>
                 <span>
                     {title}
                 </span>
@@ -17,7 +17,7 @@ function Header({ title = 'Go Finances', children }: HeaderProps) {
                     {children}
                 </nav>
             </header>
-        </div>
+    </HeaderStyle>
     )
 }
 
